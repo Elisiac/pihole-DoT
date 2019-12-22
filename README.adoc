@@ -351,7 +351,7 @@ Follow the very good guide of pi-hole.net: https://docs.pi-hole.net/guides/dns-o
 
 You can now use the Private DNS provider configuration in Android 9+ in order to use your pihole:
 
-image::img/android 10.png[Android 9+,300,300, align="center"]
+image::img/android 10.png[Android 9+, align="center"]
 
 
 Set the value of the field with the domain name of your pihole and that it is. Your phone will now only use this DNS to make queries, regardless if it is on Wifi or Network connection.
