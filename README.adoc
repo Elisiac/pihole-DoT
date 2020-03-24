@@ -355,3 +355,17 @@ image::img/android 10.png[Android 9+, align="center"]
 
 
 Set the value of the field with the domain name of your pihole and that it is. Your phone will now only use this DNS to make queries, regardless if it is on Wifi or Network connection.
+
+# Add cron to keep pihole up to date
+
+We'll make sure to keep the pihole up-to-date and will keep the logs to see what happen. First let's create the log file:
+
+```
+touch /var/log/crontab.log
+```
+
+Now we simply need to add our cron using the command `crontab -e` and add the following to make it update every day at 3am:
+
+```
+0 3 * * * pihole -up > /var/log/crontab.log
+```
